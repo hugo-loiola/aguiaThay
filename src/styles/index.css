@@ -11,11 +11,11 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #000;
+  background-color: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0;
 }
 main {
   grid-area: main;
@@ -27,7 +27,9 @@ aside {
 }
 footer {
   grid-area: footer;
-  background-color: #000;
+  background-color: red;
+  height: 100%;
+  
 }
 
 p {
@@ -41,22 +43,22 @@ p {
   color: #fff;
 }
 a:link {
-  background: #fff;
-  color: #000;
+  background: red;
   text-decoration: none;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   border-width: 2px;
   border-radius: 5px;
   border-style: solid;
-  border-color: #fff;
+  border-color: black;
+  text-decoration-color: #000;
 }
 a:visited {
   color: red;
 }
 a:hover {
   background: #000;
-  color: #fff;
+  color: red;
   font-weight: bold;
   border-color: #000;
 }
@@ -64,7 +66,85 @@ a:hover {
 img {
   max-width: 100%;
   max-height: 100%;
+  background-color: #000;
+  
 }
 .logo {
   height: 20vh;
 }
+/*Menu*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+
+.menu {
+    align-items: center;
+    padding-top: 20px;
+    background-color: red;
+}
+
+ul { 
+    position: absolute;
+    right: 3px;
+}
+.menu ul li {
+    display: inline-block;
+    color: red;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Bebas Neue';
+}
+
+.s-m{
+  margin: 0;
+  padding: 0;
+  text-decoration: blue;
+  }
+  
+  .s-m{
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  .s-m a{
+      display: inline-flex;
+      text-decoration: none;
+      width: 35px;
+      height: 35px;
+      background-color: red;
+      color: white;
+      margin: 0 6px;
+      border-radius:50px;
+      border-color: red;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+  }
+  
+  .s-m a:hover{
+  background: #2c3e50;
+  }
+  
+  .s-m a i{
+  transition: 00.4s all;
+  }
+  
+  .s-m a:hover{
+  transform: scale(1.6) rotate(25deg);
+  }
+  
+  body{
+    background-image: url(https://www.teahub.io/photos/full/185-1851118_muay-thai-wallpaper-wp4802179-muay-thai-wallpaper-hd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
