@@ -6,4 +6,4 @@
 
 O melhor lugar para se treinar !
 
-zjhbczxjh
+Com foco e fé tudo é possivél.
