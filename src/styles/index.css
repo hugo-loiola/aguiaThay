@@ -1,110 +1,68 @@
-body {
-  display: grid;
-  margin: 0;
-  height: 100vh;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-  grid-template-rows: 20% 1fr 40px;
-  grid-template-columns: 1fr 160px;
-}
-header {
-  grid-area: header;
-  background-color: red;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-main {
-  grid-area: main;
-  background-color: #800000;
-}
-aside {
-  grid-area: aside;
-  background-color: gray;
-}
-footer {
-  grid-area: footer;
-  background-color: red;
-  height: 100%;
-  
-}
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Fjalla+One&family=Keania+One&family=Lobster&display=swap');
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-variant: initial;
-  word-spacing: 4px;
-  line-height: 1.5px;
-  text-transform: capitalize;
-  text-align: center;
-  color: #fff;
-}
-a:link {
-  background: red;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  border-width: 2px;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: black;
-  text-decoration-color: #000;
-}
-a:visited {
-  color: red;
-}
-a:hover {
-  background: #000;
-  color: red;
-  font-weight: bold;
-  border-color: #000;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-  background-color: #000;
-  
-}
-.logo {
-  height: 20vh;
-}
-/*Menu*/
 *{
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
+}
+.logo{
+  width: 200px;
+  height: 200px;
+  float: left;
+  background: url(../img/ÁGUIA-removebg-preview.png) center center/200px;
+  margin-top: 2%;
+  margin-left: 43%;
+}
+.mens{
+  color: white; 
+  margin-top: 10%;
+}
+body{
+  background-image: url('https://s2.glbimg.com/FcfNXGTtqRJhhxWrWAu2II6xhm4=/0x0:1920x1278/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/G/N/UcqlZxStuvLSZpA37hIQ/ash-1629.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Keania One', cursive;
 }
 
-.menu {
-    align-items: center;
-    padding-top: 20px;
-    background-color: red;
+/*Menu*/
+#menu {
+  list-style-type: none;
+  padding: 0;
+  background-color: #7C0717;
+  text-align: center;
+}
+#menu li{
+  display: inline-block;
+  padding: 20px;
+  
+}
+#menu li a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+}
+#menu li a:hover{
+  background-color:  gray;
+  border-radius: 3%;
+  transition: background .6s;
 }
 
-ul { 
-    position: absolute;
-    right: 3px;
+/*Rodapé*/
+footer{
+  width: 100%;
+  height: 6vh;
+  bottom: 0;
+  flex-direction: column;
+  background-color: #7C0717;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
-.menu ul li {
-    display: inline-block;
-    color: red;
-}
-.menu ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-size: 20px;
-    font-family: 'Bebas Neue';
-}
-
+/*Botões Redes Sociais*/
 .s-m{
   margin: 0;
   padding: 0;
-  text-decoration: blue;
   }
   
   .s-m{
@@ -119,18 +77,17 @@ ul {
       text-decoration: none;
       width: 35px;
       height: 35px;
-      background-color: red;
+      background-color:  #7C0717;
       color: white;
       margin: 0 6px;
       border-radius:50px;
-      border-color: red;
       justify-content: center;
       align-items: center;
       font-size: 25px;
   }
   
   .s-m a:hover{
-  background: #2c3e50;
+  background: gray;
   }
   
   .s-m a i{
@@ -139,12 +96,10 @@ ul {
   
   .s-m a:hover{
   transform: scale(1.6) rotate(25deg);
+  transition: background .6s;
   }
   
-  body{
-    background-image: url(https://www.teahub.io/photos/full/185-1851118_muay-thai-wallpaper-wp4802179-muay-thai-wallpaper-hd.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
+
+
+
 

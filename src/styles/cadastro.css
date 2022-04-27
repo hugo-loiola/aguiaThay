@@ -1,31 +1,101 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Fjalla+One&family=Keania+One&family=Lobster&display=swap');
+
+body{
+  background: url('../img/fundo.cadastro.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
   display: grid;
+  grid-template-areas: 
+  'header' 'header'
+  'main' 'main';
+}
+header{
+  position: fixed ;
+}
+/*Menu*/
+#menu {
+  list-style-type: none;
+  padding: 0;
+  background-color: #7C0717;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
   margin: 0;
-  height: 100vh;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-  grid-template-rows: 20% 1fr 40px;
-  grid-template-columns: 1fr 160px;
+  width: 100%;
+  height: 65px;
 }
-header {
-  grid-area: header;
-  background-color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
+#menu li{
+  display: inline-block;
+  padding: 20px;
+  
 }
-main {
-  grid-area: main;
-  background-color: #800000;
+#menu li a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Keania One';
 }
-aside {
-  grid-area: aside;
-  background-color: gray;
+#menu li a:hover{
+  background-color:  gray;
+  border-radius: 3%;
+  transition: background .6s;
 }
-footer {
-  grid-area: footer;
-  background-color: #000;
+form{
+  position: absolute;
+  top: 20%;
+  left: 29%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 15px;
+  align-items: left;
+  margin-bottom: auto;
+}
+legend{
+  padding: 10px;
+  text-align: center;
+  background-color: #7C0717;
+  border-radius: 5%;
+  font-size: 16px;
+}
+fieldset{
+  border: 3px solid #7C0717;
+}
+.img3{
+  margin-left: 32%;  
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+input{
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+#Data{
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+button{
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 16px;
+  background-color: #7C0717;
+}
+button:hover{
+  background-color: red;
+}
+select{
+  font-size: 16px;
 }
